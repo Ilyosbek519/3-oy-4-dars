@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-oy 4-dars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config ={
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    conteienr: {
+                        center: true,
+                    },
+                    colors:{
+                        primary: '#cda274'
+                    },
+                },
+                background: {
+                    hero: 'url(./image/hero.png)',
+                }
+            }
+        }
+    </script>
+    <scrip src="https://unpkg.com/@tailwindcss/browser@4"></scrip>
+    <script src="https://cdn.tailwindcss.com"> </script>
+    <style type="text/tailwindcss"></style>
+</head>
+<body>
+    <header class="container ">
+        <nav class="flex item-center justify-between px-10 max-sm:p-5 py-3"> 
+        
+             <a href="#">
+                <img class="max-md:w-40" src="/image/SELHONO.svg" alt="logo">
+             </a>    
+             <div class="flex items-center gap-6">
+                <ul class="flex max-lg:hidden max-lg:p-10  lg:item-center max-lg:shadow max-lg:w-[52] gap-8 max-lg:fixed max-lg:flex-col bg-white top-0 left-0 bottom-0">
+                    <li class="hidden max-lg:block"> <button class="absolute top-4 end-4">
+                        <i class="fa fa-times fa-2x"></i>
+                    </button></li>
+                    <li><a href="#" class="text-black font-semibold hover:text-[#cda274] transition-all duration-300">Home</a></li>
+                    <li><a href="#" class="text-black font-semibold hover:text-[#cda274] transition-all duration-300">Pages</a></li>
+                    <li><a href="#" class="text-black font-semibold hover:text-[#cda274] transition-all duration-300">Services</a></li>
+                    <li><a href="#" class="text-black font-semibold hover:text-[#cda274] transition-all duration-300">Projects</a></li>
+                    <li><a href="#" class="text-black font-semibold hover:text-[#cda274] transition-all duration-300">Blog</a></li>
+                    <li><a href="#" class="text-black font-semibold hover:text-[#cda274] transition-all duration-300">contact</a></li>
+                </ul>
+                <a href="#" class="text-lg">
+                    <i class="fa fa-magnifying-glass"></i>
+                </a>
+            
+                   <i class="fa-solid fa-bars text-xl  max:lg:block"></i>
+             </div>
+        </nav>
+        <div class="">
+            <img class="h-[560px] mt-10 w-full bg-no-repeat bg-cover bg-center" src="./src/image/hero.png" alt="">
+        </div>
+        <div class="absolute top-36 font-semibold p-10 text-white max-md:text-start">
+            <h1 class="max-md:[10px]" style="font-size: 40px; max-width: 600px; ">Let's make your <br>home beautiful together</h1>
+            <p style="font-size: 20px; max-width: 700px;">There are many variations of the passages of lorem Ipsum fromavailable, majority.</p>
+            <a class="bg-[#cda274]  px-7 py-2 p-30 absolute rounded-lg mt-5 max-md:clear-none" href="#">
+                Get Started <i class="fa fa-arrow-right-long"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="bg-primary" id="feedback">
+            <h2 class="text-white font-serif text-5xl max-w-xl">What The People Thinks About Us</h2>
+            <div class="grid grid-cols-3 1fr max-lg:grid-cols-2 max-sm:grid-cols-1 gap-2 text-white">
+                <div class="bg-[#afafaf] rounded-xl  rouded-lg p-7  shadow-2xl">
+                    <div class="flex item-center gap-5"><img src="https://picsum.photos/100?random-1" alt="" class="rounded-full object-cover aspect-square w-32">
+                    <div class="mt-10">
+                        <h4>Lorem, ipsum.</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error?</p>
+                </div>
+
+                <div class="bg-[#afafaf] rounded-xl  rouded-xl p-7 max[300px]">
+                    <div class="flex item-center gap-5"><img src="https://picsum.photos/100?random-2" alt="" class="rounded-full object-cover aspect-square w-32">
+                        <div  class="mt-10">
+                            <h4>Lorem, ipsum.</h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        </div>
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error?</p>
+                    </div>
+                    
+                    <div class="bg-[#afafaf] rounded-xl  rouded-xl p-7">
+                        <div class="flex item-center gap-5"><img src="https://picsum.photos/100?random-3" alt="" class="rounded-full object-cover aspect-square w-32">
+                            <div class="mt-10">
+                                <h4>Lorem, ipsum.</h4>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error?</p>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
